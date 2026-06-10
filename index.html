@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Fable 5 — Mythosクラスの知性を、すべての人へ</title>
+  <meta name="description" content="Anthropic の最新フロンティアモデル Claude Fable 5。Mythosクラスの能力を一般提供。長時間自律タスク、永続メモリ、最先端のビジョン能力。">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Claude Fable 5">
+  <meta property="og:title" content="Claude Fable 5 — Mythosクラスの知性を、すべての人へ">
+  <meta property="og:description" content="Anthropic の最新フロンティアモデル Claude Fable 5。Mythosクラスの能力を一般提供。長時間自律タスク、永続メモリ、最先端のビジョン能力。">
+  <meta property="og:url" content="https://fable5-lp.netlify.app/">
+  <meta property="og:image" content="https://fable5-lp.netlify.app/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude Fable 5 — Mythosクラスの知性を、すべての人へ">
+  <meta name="twitter:description" content="Anthropic の最新フロンティアモデル Claude Fable 5。Mythosクラスの能力を一般提供。長時間自律タスク、永続メモリ、最先端のビジョン能力。">
+  <meta name="twitter:image" content="https://fable5-lp.netlify.app/ogp.png">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23050510'/%3E%3Ctext x='16' y='23' font-size='17' font-family='monospace' font-weight='bold' fill='%2300f0ff' text-anchor='middle'%3EF5%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="rain-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo"><span class="nav__logo-bracket">[</span> CLAUDE <em>FABLE_5</em> <span class="nav__logo-bracket">]</span></a>
+      <nav class="nav__links">
+        <a href="#positioning">位置付け</a>
+        <a href="#evolution">進化ポイント</a>
+        <a href="#benchmarks">ベンチマーク</a>
+        <a href="#cases">事例</a>
+        <a href="#safety">安全性</a>
+        <a href="#pricing">価格</a>
+      </nav>
+      <a href="#pricing" class="btn btn--small">ACCESS &gt;&gt;</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="eyebrow reveal">&gt; NEW_FRONTIER_MODEL // claude-fable-5</p>
+        <h1 class="hero__title glitch reveal" data-delay="100" data-text="CLAUDE FABLE 5">CLAUDE FABLE&nbsp;5</h1>
+        <p class="hero__tagline reveal" data-delay="200">Mythosクラスの知性を、<span class="neon-magenta">すべての人へ。</span></p>
+        <p class="hero__lead reveal" data-delay="300">
+          Claude Fable 5 は、Anthropic がこれまでに作ったあらゆるモデルの性能を上回る最新フロンティアモデル。
+          ソフトウェアエンジニアリング、知識業務、ビジョン、科学研究——複雑で長期的なタスクほど、その差は歴然。
+        </p>
+        <div class="hero__terminal reveal" data-delay="400">
+          <div class="terminal__bar">
+            <span class="terminal__title">root@fable5:~$ SESSION_ACTIVE</span>
+            <span class="terminal__status">● ONLINE</span>
+          </div>
+          <div class="terminal__body">
+            <span class="terminal__prompt">&gt;</span> <span id="typewriter"></span><span class="terminal__cursor">█</span>
+          </div>
+        </div>
+        <div class="hero__cta reveal" data-delay="500">
+          <a href="#evolution" class="btn btn--primary">進化のすべてを見る</a>
+          <a href="#pricing" class="btn btn--ghost">API で始める</a>
+        </div>
+        <dl class="hero__stats reveal" data-delay="600">
+          <div class="hero__stat">
+            <dd class="neon-cyan"><span class="counter" data-target="3" data-suffix="x">0</span></dd>
+            <dt>永続メモリによる性能向上</dt>
+          </div>
+          <div class="hero__stat">
+            <dd class="neon-magenta"><span class="counter" data-target="90" data-suffix="%+">0</span></dd>
+            <dt>Core Analytics スコア</dt>
+          </div>
+          <div class="hero__stat">
+            <dd class="neon-yellow"><span class="counter" data-target="95" data-suffix="%+">0</span></dd>
+            <dt>制限なしで動作するセッション</dt>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== Positioning ===== -->
+    <section class="section" id="positioning">
+      <div class="container">
+        <p class="eyebrow reveal">[ SYS://POSITIONING ]</p>
+        <h2 class="section__title reveal">ひとつの基盤モデル、<br class="sp-only">ふたつの提供形態</h2>
+        <p class="section__lead reveal">Fable 5 と Mythos 5 は同じ基盤モデル。違いは「誰に、どう届けるか」。</p>
+        <div class="duo">
+          <article class="duo__card duo__card--cyan reveal tilt">
+            <p class="duo__tag">&gt;&gt; 一般提供</p>
+            <h3 class="duo__title">Claude <span class="neon-cyan">Fable 5</span></h3>
+            <p class="duo__text">
+              Mythosクラスの能力に安全性対策を施した一般ユーザー向けモデル。
+              API と従量課金プランで<strong>本日から利用可能</strong>。サブスクリプション向けには段階的に展開。
+            </p>
+            <ul class="duo__list">
+              <li>すべての開発者・ユーザーが利用可能</li>
+              <li>新しい分類器システムで安全性を担保</li>
+              <li>セッションの95%超で制限なしに動作</li>
+            </ul>
+          </article>
+          <article class="duo__card duo__card--magenta reveal tilt" data-delay="100">
+            <p class="duo__tag">&gt;&gt; 制限アクセス</p>
+            <h3 class="duo__title">Claude <span class="neon-magenta">Mythos 5</span></h3>
+            <p class="duo__text">
+              同一の基盤モデルを、サイバーセキュリティ専門家や生物医学研究者向けの
+              <strong>制限アクセスプログラム</strong>として提供。
+            </p>
+            <ul class="duo__list">
+              <li>審査を経た専門家のみアクセス可能</li>
+              <li>高度な研究用途に最適化された提供形態</li>
+              <li>30日間のデータ保持・学習への非使用を明記</li>
+            </ul>
+          </article>
+        </div>
+        <figure class="banner reveal" data-delay="150">
+          <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=1600&q=80&auto=format&fit=crop" alt="ネオンに照らされたレトロコンピュータ" loading="lazy">
+          <figcaption class="banner__caption">// LEGACY_HARDWARE → FRONTIER_INTELLIGENCE</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Evolution ===== -->
+    <section class="section section--alt" id="evolution">
+      <div class="container">
+        <p class="eyebrow reveal">[ SYS://WHATS_NEW ]</p>
+        <h2 class="section__title reveal">これまでのモデルと、<br class="sp-only">何が違うのか</h2>
+        <div class="features">
+          <article class="feature reveal tilt">
+            <p class="feature__num">01</p>
+            <h3 class="feature__title">数百万トークンの集中力</h3>
+            <p class="feature__text">長文・長時間タスクでも集中力を維持。永続的なファイルベースメモリにより、以前のモデル比で<strong>3倍</strong>のパフォーマンス向上を実現。</p>
+          </article>
+          <article class="feature reveal tilt" data-delay="80">
+            <p class="feature__num">02</p>
+            <h3 class="feature__title">100プロンプトをワンショットで</h3>
+            <p class="feature__text">これまで100回のプロンプトに分けて対応していた処理を、<strong>ワンショットで実行</strong>できるレベルまで進化。</p>
+          </article>
+          <article class="feature reveal tilt" data-delay="160">
+            <p class="feature__num">03</p>
+            <h3 class="feature__title">最先端のビジョン能力</h3>
+            <p class="feature__text">スクリーンショットだけからウェブアプリの<strong>ソースコードを再構築</strong>できるほどの高度なビジョンタスクに対応。</p>
+          </article>
+          <article class="feature reveal tilt" data-delay="240">
+            <p class="feature__num">04</p>
+            <h3 class="feature__title">自律エージェント性能</h3>
+            <p class="feature__text">複雑なマルチステップタスクを<strong>独立して実行</strong>。タスクが複雑で長期的になるほど、前世代との差が顕著に。</p>
+          </article>
+          <article class="feature reveal tilt" data-delay="320">
+            <p class="feature__num">05</p>
+            <h3 class="feature__title">トークン効率の最適化</h3>
+            <p class="feature__text">Cognition の <strong>FrontierCode 評価で最高スコア</strong>を獲得。少ないトークンで、より多くの仕事を。</p>
+          </article>
+          <article class="feature reveal tilt" data-delay="400">
+            <p class="feature__num">06</p>
+            <h3 class="feature__title">科学研究での実力</h3>
+            <p class="feature__text">分子生物学の仮説生成において、盲検比較で Opusクラスモデルより<strong>約80%の頻度で優先選好</strong>。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Benchmarks ===== -->
+    <section class="section" id="benchmarks">
+      <div class="container">
+        <p class="eyebrow reveal">[ SYS://BENCHMARKS ]</p>
+        <h2 class="section__title reveal">ほぼすべてのベンチマークで<br class="sp-only">最先端</h2>
+        <div class="bench">
+          <div class="bench__row reveal">
+            <div class="bench__head"><span class="bench__label">Core Analytics</span><span class="bench__value">90%超（前モデル比 +10pt）</span></div>
+            <div class="bench__track"><div class="bench__bar" data-width="92"></div></div>
+          </div>
+          <div class="bench__row reveal" data-delay="80">
+            <div class="bench__head"><span class="bench__label">FrontierBench</span><span class="bench__value">最高スコア</span></div>
+            <div class="bench__track"><div class="bench__bar" data-width="100"></div></div>
+          </div>
+          <div class="bench__row reveal" data-delay="160">
+            <div class="bench__head"><span class="bench__label">FrontierCode（Cognition）</span><span class="bench__value">最高スコア — トークン効率</span></div>
+            <div class="bench__track"><div class="bench__bar" data-width="100"></div></div>
+          </div>
+          <div class="bench__row reveal" data-delay="240">
+            <div class="bench__head"><span class="bench__label">Finance（Hebbia）</span><span class="bench__value">最高スコア</span></div>
+            <div class="bench__track"><div class="bench__bar" data-width="100"></div></div>
+          </div>
+          <div class="bench__row reveal" data-delay="320">
+            <div class="bench__head"><span class="bench__label">ビジョンタスク</span><span class="bench__value">STATE_OF_THE_ART</span></div>
+            <div class="bench__track"><div class="bench__bar" data-width="97"></div></div>
+          </div>
+        </div>
+        <p class="bench__note reveal">※ Anthropic 公式発表に基づく。バーの長さはイメージです。</p>
+      </div>
+    </section>
+
+    <!-- ===== Cases ===== -->
+    <section class="section section--alt" id="cases">
+      <div class="container">
+        <p class="eyebrow reveal">[ SYS://REAL_WORLD_RESULTS ]</p>
+        <h2 class="section__title reveal">実務で証明された成果</h2>
+        <div class="cases">
+          <article class="case reveal tilt">
+            <div class="case__img"><img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?w=800&q=70&auto=format&fit=crop" alt="コードが表示された開発環境のモニター" loading="lazy"></div>
+            <div class="case__body">
+              <p class="case__num neon-cyan">2ヶ月 → 1日</p>
+              <h3 class="case__title">ソフトウェア開発（Stripe）</h3>
+              <p class="case__text">5,000万行の Ruby コードベースで、通常2ヶ月を要する作業を1日で完了。</p>
+            </div>
+          </article>
+          <article class="case reveal tilt" data-delay="100">
+            <div class="case__img"><img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=70&auto=format&fit=crop" alt="実験室のマイクロプレートとピペット" loading="lazy"></div>
+            <div class="case__body">
+              <p class="case__num neon-magenta">約10倍</p>
+              <h3 class="case__title">タンパク質設計</h3>
+              <p class="case__text">内部専門家の評価で、薬物設計プロセスの一段階を約10倍加速。</p>
+            </div>
+          </article>
+          <article class="case reveal tilt" data-delay="200">
+            <div class="case__img"><img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=70&auto=format&fit=crop" alt="グリーンのコードが流れるスクリーン" loading="lazy"></div>
+            <div class="case__body">
+              <p class="case__num neon-yellow">80%</p>
+              <h3 class="case__title">分子生物学の仮説生成</h3>
+              <p class="case__text">盲検比較で Opusクラスモデルに対し約80%の頻度で優先選好を獲得。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Safety ===== -->
+    <section class="section" id="safety">
+      <div class="container">
+        <p class="eyebrow reveal">[ SYS://SAFETY_PROTOCOL ]</p>
+        <h2 class="section__title reveal">能力と安全性の両立</h2>
+        <p class="section__lead reveal">新しい分類器システムが、フロンティア能力を安全に届ける鍵。</p>
+        <div class="safety">
+          <div class="safety__item reveal">
+            <p class="safety__code">SEC_01</p>
+            <div>
+              <h3>インテリジェント・フォールバック</h3>
+              <p>サイバーセキュリティ・生物・化学関連のクエリ、および蒸留攻撃の検出時には、自動的に Claude Opus 4.8 へフォールバック。</p>
+            </div>
+          </div>
+          <div class="safety__item reveal" data-delay="100">
+            <p class="safety__code">SEC_02</p>
+            <div>
+              <h3>95%超のセッションが制限なし</h3>
+              <p>安全対策を施しながらも、通常利用のほとんどでフルの能力を発揮。安全性が体験を損なわない設計。</p>
+            </div>
+          </div>
+          <div class="safety__item reveal" data-delay="200">
+            <p class="safety__code">SEC_03</p>
+            <div>
+              <h3>データ保持ポリシー</h3>
+              <p>Mythosクラス以上のモデルでは30日間の保持義務を設け、新モデルの学習には使用しない。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Pricing ===== -->
+    <section class="section section--alt" id="pricing">
+      <div class="container">
+        <p class="eyebrow reveal">[ SYS://PRICING ]</p>
+        <h2 class="section__title reveal">フロンティア性能を、<br class="sp-only">この価格で</h2>
+        <p class="section__lead reveal">Mythos Preview の半額未満。API と従量課金プランで本日から。</p>
+        <div class="pricing reveal" data-delay="100">
+          <div class="pricing__card pricing__card--cyan tilt">
+            <p class="pricing__label">INPUT_TOKENS</p>
+            <p class="pricing__price neon-cyan">$<span class="counter" data-target="10">0</span></p>
+            <p class="pricing__unit">/ 100万トークン</p>
+          </div>
+          <div class="pricing__card pricing__card--magenta tilt">
+            <p class="pricing__label">OUTPUT_TOKENS</p>
+            <p class="pricing__price neon-magenta">$<span class="counter" data-target="50">0</span></p>
+            <p class="pricing__unit">/ 100万トークン</p>
+          </div>
+        </div>
+        <div class="cta reveal" data-delay="200">
+          <a class="btn btn--primary btn--large" href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">公式発表を読む &gt;&gt;</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p>本ページは <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">Anthropic 公式発表</a> をもとに作成された非公式の紹介ページです。</p>
+    <p class="footer__credit">Photos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
